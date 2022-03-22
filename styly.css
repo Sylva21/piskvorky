@@ -44,11 +44,22 @@ img {
 }
 
 .buttom {
-  border-style: solid;
+  text-align: center;
+  padding-top: 25px;
+  cursor: pointer;
   background-color: #1fcca4;
 }
 
-.buttom1 {
-  border-style: solid;
+.buttom1  {
+  text-align: center;
+  padding-top: 25px;
+  cursor: pointer;
   background-color: #0197f6;
 }
+
+/*a:hover {
+  color: white;
+  background-color:darkblue
+}
+
+
