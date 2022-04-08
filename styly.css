@@ -99,5 +99,7 @@ figcaption {
   width: 100%;
 }
 
-@media (min-width = 360px) {
-}
+@media (min-width: 800px) {
+  .rules {
+    min-width: 600px;
+  }
