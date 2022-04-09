@@ -1,6 +1,6 @@
-* {
+* :after,
+:before {
   box-sizing: border-box;
-  margin: 0%;
 }
 
 body {
@@ -29,11 +29,16 @@ body {
 .section h1 {
   text-align: center;
   font-family: 'Lobster';
-  font-size: 25px;
+  font-size: 40px;
 }
 
-.section p {
-  padding: 2rem 1rem 2rem 1rem;
+p {
+  display: block;
+  padding: 10px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .buttons {
@@ -63,6 +68,16 @@ a {
 }
 .button2:hover {
   background-color: #0090e9;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 
 li {
@@ -99,7 +114,26 @@ figcaption {
   width: 100%;
 }
 
-@media (min-width: 800px) {
-  .rules {
-    min-width: 600px;
+/*@media (min-width = 750px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+  .section {
+  }
+}
+
+@media (min-width: 365px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 600px;
+  }*/
+
+@media screen and (min-width: 360px) {
+  .body {
+    margin: 1em 2em;
+  }
+}
