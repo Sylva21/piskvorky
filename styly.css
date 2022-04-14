@@ -6,6 +6,7 @@
 body {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-family: sans-serif;
   color: #fff;
   background: linear-gradient(#615dad, #ffc8da) no-repeat fixed;
@@ -39,6 +40,7 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  color: white;
 }
 
 .buttons {
@@ -114,26 +116,92 @@ figcaption {
   width: 100%;
 }
 
-/*@media (min-width = 750px) {
-  .list {
+/*--------3.část------*/
+.game {
+  max-width: 80vmin;
+  margin: 0 auto;
+}
+
+.game h1 {
+  font-family: Lobster;
+  padding-top: 35px;
+  font-size: 50px;
+  font-weight: 300;
+  justify-content: center;
+}
+
+.game__menu {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.game__menu--player img {
+  filter: invert(100%);
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+#home,
+#restart {
+  border-radius: 5px;
+}
+
+#home {
+  margin-right: 5px;
+}
+
+.game__field {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.game__field button {
+  background-color: white;
+  width: 10%;
+  height: 8vmin;
+  opacity: 0.5;
+  border: 1px solid black;
+}
+
+.game__field button:hover,
+.game__fiels button:focus {
+  background-color: white;
+  opacity: 0.4;
+}
+
+@media (min-width: 800px) {
+  #wrapper-index {
+    max-width: 370px;
+  }
+
+  .obsah {
+    max-width: 650px;
+  }
+
+  .preview {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
-  .section {
+
+  figure {
+    margin: 20px;
+    flex: 0 0 calc(50% - 40px);
   }
 }
 
-@media (min-width: 365px) {
-  .list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-width: 600px;
-  }*/
+.buttons__play {
+  background-color: #0197f6;
+  padding: 10px;
+  margin: 0px 5px 0px Opx;
+}
 
-@media screen and (min-width: 360px) {
-  .body {
-    margin: 1em 2em;
-  }
+.buttons__rules,
+.buttons__home {
+  background-color: #1fcca4;
+  padding: 10px;
 }
