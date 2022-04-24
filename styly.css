@@ -127,13 +127,17 @@ figcaption {
   justify-content: center;
 }
 
-.game__menu {
+.game__info {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  font-weight: 700;
-  font-size: 1.5rem;
+  align-items: baseline;
 }
 
+.game__status {
+  display: block;
+}
 .game__menu--player img {
   filter: invert(100%);
   display: inline-block;
@@ -143,21 +147,29 @@ figcaption {
 
 #restart {
   margin-right: 5px;
-  position: absolute;
+  position: inherit;
   top: 180px;
   right: 250px;
 }
 
 #home {
   margin-right: 5px;
-  position: absolute;
+  position: inherit;
   top: 180px;
   right: 300px;
 }
 
-.info__icons {
+#zkouska {
   display: flex;
-  justify-content: flex-start;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info__icons {
+  filter: invert();
 }
 
 .game__field {
@@ -179,6 +191,19 @@ figcaption {
 .game__fiels button:focus {
   background-color: white;
   opacity: 0.4;
+}
+
+.empty {
+  background-color: rgb(183, 171, 212);
+  width: 10%;
+  height: 10%;
+  aspect-ratio: 1/1;
+  background-size: 1%;
+}
+.empty:hover,
+.empty:focus {
+  background-color: rgb(201, 187, 212);
+  cursor: pointer;
 }
 
 @media (min-width: 800px) {
