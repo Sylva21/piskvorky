@@ -146,15 +146,15 @@ figcaption {
 }
 
 #restart {
-  margin-right: 5px;
   position: inherit;
+  padding: 4px
   top: 180px;
   right: 250px;
 }
 
 #home {
-  margin-right: 5px;
   position: inherit;
+  padding: 4px
   top: 180px;
   right: 300px;
 }
@@ -170,6 +170,9 @@ figcaption {
 
 .info__icons {
   filter: invert();
+  width: 1em;
+  height: 1em;
+  padding: inherit;
 }
 
 .game__field {

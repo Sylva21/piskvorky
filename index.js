@@ -1,18 +1,22 @@
-const buttons = document.querySelectorAll('.empty');
-const players = ['circle', 'cross'];
-let a = 0;
+let itsYourTurn = 'circle';
+const turn = document.querySelector('#turn');
 
-const move = (evt) => {
-  evt.target.classList.add(`game__field--${players[a]}`);
-  evt.target.disabled = true;
-
-  a += 1;
-  if (a === players.length) {
-    a = 0;
+const move = (event) => {
+  if (itsYourTurn === 'circle') {
+    event.target.disabled = true;
+    event.target.classList.add('game__field--circle');
+    itsYourTurn = 'cross';
+    turn.src = 'images/cross.svg';
+  } else {
+    event.target.disabled = true;
+    itsYourTurn = 'circle';
+    event.target.classList.add('game__field--cross');
+    turn.src = 'images/circle.svg';
   }
-  document.querySelector('#turn').src = `images/${players[a]}.svg`;
+  console.log(event);
 };
 
+const buttons = document.querySelectorAll('.game__field button');
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', move);
 }
