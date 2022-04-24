@@ -6,12 +6,12 @@ const move = (event) => {
     event.target.disabled = true;
     event.target.classList.add('game__field--circle');
     itsYourTurn = 'cross';
-    turn.src = 'images/cross.svg';
+    turn.src = 'cross.svg';
   } else {
     event.target.disabled = true;
     itsYourTurn = 'circle';
     event.target.classList.add('game__field--cross');
-    turn.src = 'images/circle.svg';
+    turn.src = 'circle.svg';
   }
   console.log(event);
 };
